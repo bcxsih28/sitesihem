@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #5c543e;
+    margin: 15px 0;
+}
+
+.gif {
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les boutons */
+    margin-top: 20px; /* Espace au-dessus du groupe de boutons */
+}
+
+
+button {
+    width: 150px;
+    height: inherit;
+    color: ##d5882f;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #d5882f;
+}
+
+button.yes-btn {
+    background: #dcc292;
+  position: absolute; /* Important pour que le bouton soit positionné par rapport à son parent */
+  margin-left: 50%;
+  top: 50%; /* Ajustez cette valeur pour positionner le bouton verticalement */
+  transform: translateX(-300%) translateY(-50%); /* Centre le bouton horizontalement et verticalement */
+}
+}
+
+button.no-btn {
+    background: #dcc292;
+    color: #d5882f;
+    position: absolute;
+    margin-right: 50%;
+    transform: translateX(-50%);
+}
